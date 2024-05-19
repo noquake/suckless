@@ -1,0 +1,14 @@
+PRIORITY - 
+
+- feh (command line based image viewer)
+- btop (clear machine stats)
+- bat (more legible, detailed cat command)
+
+SECONDARY -
+- fzf (file + item finder)
+- atuin (search for previously used commands)
+- powertop (intel based power tuning)
+- dust (more detailed disk space analysis instead of 'df' command)
+- grub-reboot (control the next grub boot)
+- tldr (summarized man page)
+- nomacs (higher level image viewing software) 
