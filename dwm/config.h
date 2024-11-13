@@ -12,7 +12,7 @@ static const char col_gray1[]       = "#282828";
 static const char col_gray2[]       = "#504945";
 static const char col_gray3[]       = "#bdae93";
 static const char col_gray4[]       = "#ebdbb2";
-static const char col_cyan[]        = "#8f60d2";
+static const char col_cyan[]        = "#a960d2";
 // red cc241d
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
@@ -68,9 +68,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
-// static const char *clipcmd[] = { "clipmenu", "fn-", dmenufont, NULL };
 static const char *clipcmd[] = { "clipmenu", NULL };
-// static const char *urlcmd[] = { "clipmenu-url", NULL };
 
 #include "movestack.c"
 static const Key keys[] = {
@@ -78,7 +76,6 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_y,      spawn,          {.v = clipcmd } },
-	// { MODKEY,                       XK_v,      spawn,          {.v = urlcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
