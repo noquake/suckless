@@ -70,7 +70,7 @@ static const struct arg args[] = {
 	{ uptime, "%s   ",              NULL },
 	{ wifi_essid,   "%s   ",        "wlp0s20f3" },
 	// { vol_perc,     "[%s]   ", "amixer sget Master | awk -F\"[][]\" '/%/ {print $2 }' | head -n1"            "/dev/mixer"},
-	{ disk_perc,    "[DISK %s%%]   ",     "/dev/nvme0n1p2" },
+	{ disk_perc,    "[DISK %s%%]   ",     "/dev/nvme0n1" },
 	{ cpu_perc,     "[CPU %s%%]   ",      NULL },
 	{ ram_perc,     "[RAM %s%%]   ",      NULL },
 	{ battery_perc, "BAT: %s%%   ",       "BAT0" },
