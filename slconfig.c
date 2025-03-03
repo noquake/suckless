@@ -1,5 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
+// THIS IS A GENERIC CONFIG FILE ACROSS MACHINES. TO MAKE INSTALL ON DEVICE #define VARIABLES AND REPLACE AS NECESSARY
 
 /* to install, run git clone https://git.suckless.org/slstatus */
 #define MAMMON_WIFI wlp0s20f3
